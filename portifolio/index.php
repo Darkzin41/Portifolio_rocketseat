@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,28 +38,38 @@ $projetos = [
     // array dentro de array
     [
         // estrutura de chave-valor do array
-        "titulo" => "Meu portifolio",
+        "titulo" => "STC AGILIAZA",
         "finalizado" => false,
-        "ano" => 2022,
-        "descricao" =>"Meu portifolio pessoal, escrito em php e html, ez pz lemon squeezy.",
+        "ano" => 2026,
+        "descricao" =>"Projeto em desenvolvimento para centralizar a coleta, a validação e a gestão de dados entre a STC/MA e orgãos estaduais ",
+        "staff" => [
+            "React",
+            "Vue.js",
+            "Node.js",
+            "Python",
+            "Typescript",
+            ]
     ],
     [
-        "titulo" => "Lista de Tarefas",
+        "titulo" => "ACERVO DIGITAL INDÍGENA",
         "finalizado" => true,
         "ano" => 2024,
-        "descricao" =>"Lista de tarefas, escrito em php e html, ez pz lemon squeezy.",
+        "descricao" =>"O Arquivo Digital é uma iniciativa educacional e tecnológica dedicada ao patrimônio documental relacionado à história indígena de São José de Ribamar.",
+        "staff" => ["HTML","JavaScript","CSS","Php"]            
     ],
     [
-        "titulo" => "Controle de livros",
-        "finalizado" => true,
-        "ano" => 2025,
-        "descricao" =>"Lista de livros, escrito em php e html, ez pz lemon squeezy.",
+        "titulo" => "Projeto 3",
+        "finalizado" => false,
+        "ano" => 2026,
+        "descricao" =>"",
+         "staff" => []   
     ],
     [
         "titulo" => "Projeto 4",
         "finalizado" => false,
-        "ano" => 2024,
-        "descricao" =>"mais um projeto, escrito em php e html, ez pz lemon squeezy.",
+        "ano" => 2026,
+        "descricao" =>".",
+        "staff" => []  
     ],
 
 

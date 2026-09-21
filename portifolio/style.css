@@ -1,5 +1,28 @@
-div {
-    height: 10px;
-    background-color: red;
-    color: black;
+/* O sublinhado dos links sociais fica afastado e recebe uma cor/sombra própria no hover. */
+.header-social-link {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 0.75rem 0.9rem;
+}
+
+.header-social-link::after {
+    position: absolute;
+    right: 0.75rem;
+    bottom: 0.35rem;
+    left: 0.75rem;
+    height: 2px;
+    content: "";
+    background-color: transparent;
+    box-shadow: none;
+    transition: background-color 180ms ease, box-shadow 180ms ease;
+}
+
+.header-social-link.linkedin:hover::after {
+    background-color: #1e3a8a;
+    box-shadow: 0 2px 5px rgba(30, 58, 138, 0.8);
+}
+
+.header-social-link.github:hover::after {
+    background-color: #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
 }
