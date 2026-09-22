@@ -1,4 +1,5 @@
 /* O sublinhado dos links sociais fica afastado e recebe uma cor/sombra própria no hover. */
+/* Posiciona o link para permitir o sublinhado personalizado. */
 .header-social-link {
     position: relative;
     display: inline-block;
@@ -6,6 +7,7 @@
 }
 
 .header-social-link::after {
+    /* Cria a linha decorativa abaixo do link. */
     position: absolute;
     right: 0.75rem;
     bottom: 0.35rem;
@@ -18,11 +20,13 @@
 }
 
 .header-social-link.linkedin:hover::after {
-    background-color: #1e3a8a;
-    box-shadow: 0 2px 5px rgba(30, 58, 138, 0.8);
+    /* Destaca o LinkedIn com brilho azul-claro. */
+    background-color: #7dd3fc;
+    box-shadow: 0 2px 8px rgba(125, 211, 252, 0.9);
 }
 
 .header-social-link.github:hover::after {
-    background-color: #000000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    /* Mantém o mesmo destaque visual no GitHub. */
+    background-color: #7dd3fc;
+    box-shadow: 0 2px 8px rgba(125, 211, 252, 0.9);
 }

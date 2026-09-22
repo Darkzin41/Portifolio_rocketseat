@@ -1,4 +1,5 @@
 <?php 
+// Dados usados para montar os cartões de projetos.
 $projetos = [
     // array dentro de array
     [
@@ -7,7 +8,7 @@ $projetos = [
         "finalizado" => false,
         "ano" => 2026,
         "descricao" =>"Projeto em desenvolvimento para centralizar a coleta, a validação e a gestão de dados entre a STC/MA e orgãos estaduais ",
-        "stack" => ["HTML","JavaScript","CSS","Php"],
+        "stack" => ["Next.js 16", "React 19", "TypeScript", "Node.js 22","npm","Jest", "Playwright"],
         "img" => "/img/agiliza.png",
         "alt" => "Stc Agiliza Transparencia"
     ],
@@ -55,7 +56,7 @@ $projetos = [
 
 ?>
 
-
+<!-- Renderiza um cartão para cada projeto cadastrado. -->
 <?php foreach ($projetos as $projeto): ?>
  <div class="bg-gray-800 p-4 rounded-lg shadow-xl/30">
 
@@ -75,6 +76,7 @@ $projetos = [
                     <?php endif; ?>
                 </div>
 
+                <!-- Tecnologias usadas no projeto. -->
                 <div class="flex flex-wrap justify-end gap-1">
 
                     <?php 
@@ -98,6 +100,7 @@ $projetos = [
                 </div>
             </div>
 
+            <!-- Imagem e descrição do projeto. -->
             <div class="flex flex-col items-center gap-4 md:flex-row md:justify-between">
                 <div class="w-full md:w-2/5"><img class="h-40 w-full rounded-lg bg-gray-700 p-1 object-contain shadow-lg shadow-sky-500/20 transition duration-300 hover:scale-[1.02] hover:shadow-sky-400/40" src="<?= $projeto['img'] ?>" alt="<?= $projeto['alt'] ?? $projeto['titulo'] ?>"></div>
                 <div class="w-full md:w-3/5">
